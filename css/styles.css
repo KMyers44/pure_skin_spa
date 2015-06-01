@@ -1,0 +1,58 @@
+body, div,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, dl, dt, dd, ol, ul, li, hr,
+fieldset, form, label, legend, th, td,
+article, aside, figure, footer, header, hgroup, menu, nav, section,
+summary, hgroup {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+#home {
+  background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.1)
+      ),
+    url('../images/misty-mountain.jpeg');
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.main {
+  background-color: rgb(240, 240, 240);
+  padding-bottom: 5px;
+  font-family: 'Palanquin', sans-serif;
+}
+
+
+
+.slogan {
+  margin: 50px;
+  padding-top: 132px;
+  text-align: center;
+  color: white;
+  font-size: 2.4em;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-family: 'Palanquin', sans-serif;
+  text-shadow: 2px 2px 2px rgb(52, 46, 46);
+}
+
+#beauty {
+  font-size: 2.5em;
+  font-family: 'Great Vibes', cursive;
+  letter-spacing: 10px;
+}
+
+
+.footer {
+  padding: 60px 0;
+  background-color: #5887AC;
+}
+
+
+

@@ -1,0 +1,111 @@
+/* TREATMENTS */
+#treatments {
+  background: rgb(240, 240, 240);
+}
+
+.upper-page {
+  position: fixed;
+  z-index: 5;
+}
+
+.container {
+  padding-top: 75px;
+}
+
+.col-md-7 {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 5px;
+  margin-bottom: 75px;
+  width: 70%;
+  margin: 75px auto;
+}
+
+#facials,
+#tints,
+#waxing,
+#acutonics {
+  text-align: left;
+  color: rgb(102, 101, 101);
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+#facials {
+  padding-top: 0;
+}
+
+#facials img {
+  display: block;
+  margin: -35px auto 15px;
+  width: 90%;
+}
+
+#acutonics {
+  padding-bottom: 0;
+}
+
+#facials h1,
+#tints h1,
+#waxing h1,
+#acutonics h1 {
+  font-size: 34px;
+  letter-spacing: 5px;
+  margin-top: 0px;
+  border-bottom: 1px dotted;
+  border-top: 1px dotted;
+  text-align: center;
+  font-family: 'Palanquin', sans-serif;
+}
+
+#acutonics h3 {
+  padding-top: 35px;
+}
+
+#facials p,
+#tints p,
+#waxing p,
+#acutonics p {
+  padding: 30px 0;
+  text-align: justify;
+  font-size: 1.1em;
+  line-height: 1.3;
+}
+
+#facials ul,
+#tints ul,
+#waxing ul,
+#acutonics ul  {
+  width: 75%;
+  margin: 0 auto;
+  color: rgb(211, 143, 102);
+}
+
+.col-md-7 li,
+h3 {
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  padding: 5px 0;
+}
+
+span.price {
+  float: right;
+  padding-right: 15px;
+}
+
+figure {
+  margin-top: 65px;
+}
+
+figure img {
+  width: 50%;
+  height: auto;
+  margin: 50px auto 5px;
+  display: block;
+}
+
+figure figcaption {
+  text-align: center;
+
+}
