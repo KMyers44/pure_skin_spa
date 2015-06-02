@@ -21,6 +21,9 @@ summary, hgroup {
     height: 100vh;
 }
 
+.container {
+  width: 75%;
+}
 
 .main {
   background-color: rgb(240, 240, 240);
@@ -31,7 +34,6 @@ summary, hgroup {
 
 
 .slogan {
-  margin: 50px;
   padding-top: 132px;
   text-align: center;
   color: white;

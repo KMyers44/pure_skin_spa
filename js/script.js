@@ -25,7 +25,7 @@ $(document).ready(function() {
 
       $('html, body').stop().animate({
           'scrollTop': $target.offset().top
-      }, 900, 'swing', function () {
+      }, 1000, 'swing', function () {
           window.location.hash = target;
       });
   });
@@ -33,12 +33,21 @@ $(document).ready(function() {
 
   function showSpecials() {
     messageArea.fadeIn('slow');
+    $(messageArea).css(
+        'margin-top', '120px'
+      );
     $('.slogan').hide();
     $('.main').hide();
   }
 
   function closeSpecials() {
     messageArea.fadeOut('slow');
+    $('header').css(
+      'position', 'fixed'
+      );
+    $('header').css(
+      'padding-top', '100px'
+      );
     $('.slogan').fadeIn('slow');
     $('.main').fadeIn('slow');
   }

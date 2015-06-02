@@ -99,7 +99,7 @@ header {
   width: 100%;
   left: 0;
   top: 0;
-  background: rgba(88, 135, 172, 1);
+  background: rgba(88, 135, 172, 0.9);
   -webkit-transition: background 0.2s;
 }
 
