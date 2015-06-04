@@ -41,19 +41,20 @@ summary, hgroup {
   font-weight: 300;
   letter-spacing: 2px;
   font-family: 'Palanquin', sans-serif;
-  text-shadow: 2px 2px 2px rgb(52, 46, 46);
+  text-shadow: 3px 3px 3px rgb(52, 46, 46);
 }
 
 #beauty {
-  font-size: 2.5em;
+  font-size: 2.8em;
   font-family: 'Great Vibes', cursive;
-  letter-spacing: 10px;
+  letter-spacing: 1px;
 }
 
 
 .footer {
   padding: 60px 0;
   background-color: #5887AC;
+  color: #fff;
 }
 
 

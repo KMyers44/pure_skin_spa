@@ -12,39 +12,7 @@
   RESPONSIVE NAV STYLES
 --------------------------------------------- */
 
-/* Change this in order to change the Dropdown symbol */
-.dropdown-services:after { content: ' +'; }
 
-.dropdown:hover {
-  opacity: 1;
-}
-
-/* dropdown box */
-#services-list {
-  /*display: none;*/
-  position: absolute;
-  top: 21px;
-  z-index: 5;
-}
-
-  /* Display Dropdowns on Hover */
-.menu-item:hover > ul {
-  display:list-item;
-}
-
-
-.nav-collapse ul {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: block;
-  list-style: none;
-}
-
-.nav-collapse li {
-  width: 100%;
-  display: block;
-}
 
 /*.js .nav-collapse {
   clip: rect(0 0 0 0);
@@ -115,6 +83,7 @@ header {
   letter-spacing: 5px;
   font-size: 1.4em;
   font-family: 'Open Sans', sans-serif;
+  margin-left: 15px;
 }
 
 
@@ -166,6 +135,72 @@ header {
   top: 0;
 }
 */
+
+/* Change this in order to change the Dropdown symbol */
+.dropdown-services:after { content: ' +'; }
+
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+.nav-collapse li {
+  width: 100%;
+  display: block;
+}
+
+/* dropdown box */
+#services-list {
+  position: absolute;
+  top: 50px;
+  /*display: none;*/
+}
+
+#services-list > li a {
+  background-color: #B8CDDF;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#services-list li a {
+  background-color: #B8CDDF;
+  color: #fff;
+  text-transform: uppercase;
+  padding-left: 2em;
+}
+
+    @media screen and (min-width: 40em) {
+      #services-list li a {
+        display: none;
+      }
+    }
+
+#services-list li a:hover {
+  background-color: #C4D7E7;
+  color: #fff;
+}
+
+
+
+
+
+/* Trying stuff for dropdown*/
+/*.nav-collapse li li:hover {
+  background-color: #B8CDDF;
+  color: #fff;
+  font-weight: 400;
+}
+*/
+
+
+/* End new stuff */
+
+
+
+
 .nav-collapse,
 .nav-collapse * {
   -webkit-box-sizing: border-box;
@@ -181,12 +216,12 @@ header {
   line-height: 1.7;
 }
 
-@media screen and (min-width: 40em) {
-  .nav-collapse {
-    float: right;
-    width: auto;
-  }
-}
+    @media screen and (min-width: 40em) {
+      .nav-collapse {
+        float: right;
+        width: auto;
+      }
+    }
 
 .nav-collapse li {
   float: left;
@@ -195,16 +230,18 @@ header {
   letter-spacing: 1px;
 }
 
-@media screen and (min-width: 40em) {
-  .nav-collapse li {
-    width: auto;
-  }
-}
+    @media screen and (min-width: 40em) {
+      .nav-collapse li {
+        width: auto;
+      }
+    }
+
+
 
 .nav-collapse a:hover {
   outline: 0;
   background-color: #84AAC8;
-  opacity: 1;
+  font-weight: bold;
 }
 
 .nav-collapse a {
@@ -216,38 +253,26 @@ header {
   float: left;
 }
 
+    @media screen and (min-width: 40em) {
+      .nav-collapse a {
+        padding: 1.02em 2em;
+        text-align: center;
+        border-top: 0;
+        float: left;
+        margin: 0;
+      }
+    }
 
-@media screen and (min-width: 40em) {
-  .nav-collapse a {
-    padding: 1.02em 2em;
-    text-align: center;
-    border-top: 0;
-    float: left;
-    margin: 0;
-  }
-}
 
-.nav-collapse ul ul a {
-  background: #ca3716;
-  padding-left: 2em;
-}
 
-.dropdown-services {
 
-}
-
-@media screen and (min-width: 40em) {
-  .nav-collapse ul ul a {
-    display: none;
-  }
-}
 
 
 /* ------------------------------------------
   NAV TOGGLE STYLES
---------------------------------------------- */
+---------------------------------------------
 
-@font-face {
+/*@font-face {
   font-family: "responsivenav";
   src:url("../icons/responsivenav.eot");
   src:url("../icons/responsivenav.eot?#iefix") format("embedded-opentype"),
@@ -257,7 +282,7 @@ header {
   font-weight: normal;
   font-style: normal;
 }
-
+*/
 .nav-toggle {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

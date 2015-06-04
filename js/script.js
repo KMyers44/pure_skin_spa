@@ -16,7 +16,7 @@ $(document).ready(function() {
   });
 
 
-  // scroll on treatment items click
+  // scroll action
   $('a[href^="#"]').on('click',function (e) {
       e.preventDefault();
 
@@ -32,24 +32,22 @@ $(document).ready(function() {
 
 
   function showSpecials() {
-    messageArea.fadeIn('slow');
-    $(messageArea).css(
-        'margin-top', '120px'
-      );
+    messageArea.fadeIn('slow').css('position', 'absolute');
+
     $('.slogan').hide();
-    $('.main').hide();
+    $('.container, .main').hide();
   }
 
   function closeSpecials() {
     messageArea.fadeOut('slow');
-    $('header').css(
-      'position', 'fixed'
-      );
-    $('header').css(
-      'padding-top', '100px'
-      );
+    // $('header').css(
+    //   'position', 'fixed'
+    //   );
+    // $('header').css(
+    //   'padding-top', '100px'
+    //   );
     $('.slogan').fadeIn('slow');
-    $('.main').fadeIn('slow');
+    $('.container, .main').fadeIn('slow');
   }
 
 });
