@@ -1,19 +1,22 @@
 $(document).ready(function() {
 
-  var messageArea = $('.message-area');
-  var icon         = $('.icon');
 
+  // page transitions
+  var main = $('.main');
 
-  // make message_area appear
-  $('.specials').on('click', function() {
-    showSpecials();
-  });
+  main.css('display', 'none');
 
+  main.fadeIn(500);
 
-  // close message_area
-  $(icon).on('click', function() {
-    closeSpecials();
-  });
+  $('a.transition').click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        main.fadeOut(500, redirectPage);
+    });
+
+    function redirectPage() {
+        window.location = linkLocation;
+    }
 
 
   // scroll action
@@ -31,23 +34,5 @@ $(document).ready(function() {
   });
 
 
-  function showSpecials() {
-    messageArea.fadeIn('slow').css('position', 'absolute');
-
-    $('.slogan').hide();
-    $('.container, .main').hide();
-  }
-
-  function closeSpecials() {
-    messageArea.fadeOut('slow');
-    // $('header').css(
-    //   'position', 'fixed'
-    //   );
-    // $('header').css(
-    //   'padding-top', '100px'
-    //   );
-    $('.slogan').fadeIn('slow');
-    $('.container, .main').fadeIn('slow');
-  }
 
 });
